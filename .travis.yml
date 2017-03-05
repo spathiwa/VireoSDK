@@ -6,8 +6,11 @@ compiler: gcc
 before_install:
 - export DISPLAY=:99.0
 - export TZ=CST6CDT
+- docker pull apiaryio/emcc:1.36
 - docker ps -a
-
+- docker run --rm -v $(pwd):/src -t apiaryio/emcc:1.36 make
+script:
+- true
 
 # sudo: false
 # language: cpp
