@@ -111,7 +111,7 @@
                 bufferSize = len + 1;
                 bufferPtr = Module._malloc(bufferSize);
             }
-            Module.writeStringToMemory(str, bufferPtr);
+            Module.stringToUTF8(str, bufferPtr, bufferSize);
             return bufferPtr;
         };
 
