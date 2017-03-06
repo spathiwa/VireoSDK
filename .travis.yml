@@ -4,7 +4,7 @@ services:
 language: cpp
 compiler: gcc
 addons:
-#  firefox: latest
+  firefox: latest
   apt:
     sources:
     - ubuntu-toolchain-r-test
@@ -23,8 +23,8 @@ before_install:
 - pip -V
 
 install:
-#- npm install
-#- pip install --user -r requirements.txt
+- npm install
+- pip install --user -r requirements.txt
 - if [ "$CXX" = "g++" ]; then export CXX="g++-4.9" CC="gcc-4.9"; fi
 - gcc -v
 # - git clone --depth 1 https://github.com/ni-kismet/emscripten-sdk.git
@@ -37,19 +37,19 @@ install:
 - docker run --rm -v $(pwd):/src -t apiaryio/emcc:1.36 make js
 
 before_script:
-#- nohup python -m httpbin.core --port 64526 &
-#- while ! nc -q 1 127.0.0.1 64526 </dev/null; do sleep 2; done
-#- curl http://127.0.0.1:64526/get?show_env=1
+- nohup python -m httpbin.core --port 64526 &
+- while ! nc -q 1 127.0.0.1 64526 </dev/null; do sleep 2; done
+- curl http://127.0.0.1:64526/get?show_env=1
 #- make
 
 script:
 - make testjs
 - make testnative
-# - npm run test
-# - jobs -l
-# - kill $!
-# - wait
-# - cat ./nohup.out
+- npm run test
+- jobs -l
+- kill $!
+- wait
+- cat ./nohup.out
 
 deploy:
   provider: npm
