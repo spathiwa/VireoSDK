@@ -615,6 +615,7 @@ class TypeCommon
     //! Size of the type in bits including padding. If the type is bit level it's the raw bit size with no padding.
     virtual IntIndex BitLength()  {
         return _topAQSize * _typeManager->AQBitLength(); }  // TODO(PaulAustin): defer to type manager for scale factor
+    void Dump(void *pData);  // Debugging aid
 };
 
 //------------------------------------------------------------
@@ -933,6 +934,7 @@ class PointerType : public WrappedType
 
 class RefNumVal {
  public:
+    RefNumVal() : _refnum(0), _maxSize(-1), _typeRef(NULL)  { }
     RefNumVal(TypeRef typeRef, Int32 maxSize) : _typeRef(typeRef) { _maxSize = maxSize; }
     //! Array's type.
     TypeRef Type()                  { return _typeRef; }
