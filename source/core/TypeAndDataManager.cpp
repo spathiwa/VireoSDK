@@ -782,7 +782,7 @@ Boolean TypeCommon::IsA(TypeRef otherType, Boolean compatibleStructure)
 
         if (thisEncoding == kEncoding_Array && otherEncoding == kEncoding_Array && this->Rank() == otherType->Rank()) {
             bMatch = this->GetSubElement(0)->IsA(otherType->GetSubElement(0), compatibleStructure);
-            return bMatch;
+            //return bMatch;
         } else if (thisEncoding == kEncoding_UInt || thisEncoding == kEncoding_S2CInt ||
                    thisEncoding == kEncoding_Ascii || thisEncoding == kEncoding_Unicode) {
             if (otherEncoding == kEncoding_UInt || otherEncoding == kEncoding_S2CInt ||
@@ -804,7 +804,7 @@ Boolean TypeCommon::IsA(TypeRef otherType, Boolean compatibleStructure)
                         if (!this->GetSubElement(i)->CompareType(otherType->GetSubElement(i)))
                             break;
                     }
-                    if (i == this->SubElementCount())
+                    //if (i == this->SubElementCount())
                         bMatch = true;
                 }
             }
