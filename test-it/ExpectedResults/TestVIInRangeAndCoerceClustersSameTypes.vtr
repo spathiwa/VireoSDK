@@ -1,0 +1,12 @@
+TestResultNestedCoercedAllAggregate true
+TestResultNestedCoercedSomeAggregate true
+TestResultNestedClusterAggregate true
+TestResultCoercedAllAggregate true
+TestResultCoercedOneAggregate true
+TestResultNumericInRangeAggregate true
+TestResultNestedCoercedAll true
+TestResultNestedCoercedSome true
+TestResultNestedCluster true
+TestResultCoercedAll true
+TestResultCoercedOne true
+TestResultNumericInRange true

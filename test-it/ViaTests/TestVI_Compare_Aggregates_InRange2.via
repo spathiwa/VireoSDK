@@ -1,0 +1,284 @@
+// Generated on 03/22/2018 21:46:27
+define (c0 dv(.Int32 0))
+define (g1 a(c(
+    e(.Int32 Element%201)
+    e(.Int32 Element%202)
+) *) )
+define (g4 a(c(
+    e(.Boolean Element%201)
+    e(.Boolean Element%202)
+) *) )
+define (g7 a(c(
+    e(.Int32 Element%201)
+    e(.Int32 Element%202)
+) *) )
+define (c10 dv(.Int32 0))
+define (c11 a(c(
+    e(.Int32 Element%201)
+    e(.Int32 Element%202)
+) *) )
+define (c14 a(c(
+    e(.Boolean Element%201)
+    e(.Boolean Element%202)
+) *) )
+define (c17 a(c(
+    e(.Int32 Element%201)
+    e(.Int32 Element%202)
+) *) )
+define (c20 dv(.Int32 1))
+//---------------------------------------------------
+//VI Definition: :Web Server:Interactive:App:TestVI_Compare_Aggregates_InRange.gviweb
+define (%3AWeb%20Server%3AInteractive%3AApp%3ATestVI_Compare_Aggregates_InRange%2Egviweb dv(.VirtualInstrument (
+    Locals: c(   // Data Space1
+        e(.Boolean local21)
+        e(.Boolean local22)
+        e(.Boolean local23)
+        e(.Boolean dataItem_TestResult_XY3)
+        e(.Boolean local25)
+        e(.Boolean dataItem_TestResult_XY2)
+        e(.Boolean local27)
+        e(.Boolean dataItem_TestResult_XY)
+        e(.Boolean local29)
+    )
+        clump(1
+        %3AWeb%20Server%3AInteractive%3AApp%3ATestVI_Compare_Aggregates_InRange%2Egvi(local21 local22 local23)
+        Copy(local23 dataItem_TestResult_XY3)
+        Copy(local22 dataItem_TestResult_XY2)
+        Copy(local21 dataItem_TestResult_XY)
+        Printf("TestResult_XY3 %z\n" dataItem_TestResult_XY3)
+        Printf("TestResult_XY2 %z\n" dataItem_TestResult_XY2)
+        Printf("TestResult_XY %z\n" dataItem_TestResult_XY)
+/* Clump Ended. */    )
+)))
+//---------------------------------------------------
+//VI Definition: :Web Server:Interactive:App:TestVI_Compare_Aggregates_InRange.gvi
+define (%3AWeb%20Server%3AInteractive%3AApp%3ATestVI_Compare_Aggregates_InRange%2Egvi dv(.VirtualInstrument (
+    Params: c(  //param block
+        o(dv(.Boolean false)dataItem_TestResult_XY)
+        o(dv(.Boolean false)dataItem_TestResult_XY2)
+        o(dv(.Boolean false)dataItem_TestResult_XY3)
+    )
+    Locals: c(   // Data Space1
+        e(dv(a(c(
+            e(.Int32 Element%201)
+            e(.Int32 Element%202)
+        ) *) ((3 4 ) (3 4 ) (3 4 )))dataItem_Array4)
+        e(a(c(
+            e(.Int32 Element%201)
+            e(.Int32 Element%202)
+        ) *) local38)
+        e(dv(a(c(
+            e(.Boolean Element%201)
+            e(.Boolean Element%202)
+        ) *) ((false false ) (false true ) (true true )))dataItem_Array3)
+        e(a(c(
+            e(.Boolean Element%201)
+            e(.Boolean Element%202)
+        ) *) local44)
+        e(dv(a(c(
+            e(.Int32 Element%201)
+            e(.Int32 Element%202)
+        ) *) ((2 3 ) (2 3 ) (2 3 )))dataItem_Array8)
+        e(a(c(
+            e(.Int32 Element%201)
+            e(.Int32 Element%202)
+        ) *) local50)
+        e(dv(a(c(
+            e(c(
+                e(.Int32 Element%201)
+                e(.Int32 Element%202)
+            ) Element%201)
+            e(c(
+                e(.Int32 Element%201)
+                e(.Int32 Element%202)
+            ) Element%202)
+            e(c(
+                e(.Int32 Element%201)
+                e(.Int32 Element%202)
+            ) Element%203)
+        ) *) (((1 2 ) (3 4 ) (2 3 ) ) ((1 4 ) (2 3 ) (2 3 ) ) ((3 4 ) (1 2 ) (2 3 ) )))dataItem_Array5)
+        e(a(c(
+            e(c(
+                e(.Int32 Element%201)
+                e(.Int32 Element%202)
+            ) Element%201)
+            e(c(
+                e(.Int32 Element%201)
+                e(.Int32 Element%202)
+            ) Element%202)
+            e(c(
+                e(.Int32 Element%201)
+                e(.Int32 Element%202)
+            ) Element%203)
+        ) *) local70)
+        e(.Int32 local71)
+        e(.Int32 local72)
+        e(.Int32 local73)
+        e(c(
+            e(c(
+                e(.Int32 Element%201)
+                e(.Int32 Element%202)
+            ) Element%201)
+            e(c(
+                e(.Int32 Element%201)
+                e(.Int32 Element%202)
+            ) Element%202)
+            e(c(
+                e(.Int32 Element%201)
+                e(.Int32 Element%202)
+            ) Element%203)
+        ) local83)
+        e(c(
+            e(c(
+                e(.Int32 Element%201)
+                e(.Int32 Element%202)
+            ) Element%201)
+            e(c(
+                e(.Int32 Element%201)
+                e(.Int32 Element%202)
+            ) Element%202)
+            e(c(
+                e(.Int32 Element%201)
+                e(.Int32 Element%202)
+            ) Element%203)
+        ) local93)
+        e(c(
+            e(.Int32 Element%201)
+            e(.Int32 Element%202)
+        ) local96)
+        e(c(
+            e(.Int32 Element%201)
+            e(.Int32 Element%202)
+        ) local99)
+        e(c(
+            e(.Int32 Element%201)
+            e(.Int32 Element%202)
+        ) local102)
+        e(c(
+            e(.Boolean Element%201)
+            e(.Boolean Element%202)
+        ) local105)
+        e(c(
+            e(.Int32 Element%201)
+            e(.Int32 Element%202)
+        ) local108)
+        e(c(
+            e(.Int32 Element%201)
+            e(.Int32 Element%202)
+        ) local111)
+        e(a(c(
+            e(.Int32 Element%201)
+            e(.Int32 Element%202)
+        ) *) local114)
+        e(a(c(
+            e(.Boolean Element%201)
+            e(.Boolean Element%202)
+        ) *) local117)
+        e(a(c(
+            e(.Int32 Element%201)
+            e(.Int32 Element%202)
+        ) *) local120)
+        e(a(c(
+            e(.Int32 Element%201)
+            e(.Int32 Element%202)
+        ) *) local123)
+        e(a(c(
+            e(.Boolean Element%201)
+            e(.Boolean Element%202)
+        ) *) local126)
+        e(a(c(
+            e(.Int32 Element%201)
+            e(.Int32 Element%202)
+        ) *) local129)
+        e(.Boolean local130)
+        e(.Boolean local131)
+        e(dv(a(c(
+            e(.Int32 Element%201)
+            e(.Int32 Element%202)
+        ) *) ())dataItem_Array7)
+        e(a(c(
+            e(.Int32 Element%201)
+            e(.Int32 Element%202)
+        ) *) local137)
+        e(.Boolean local138)
+        e(.Boolean local139)
+        e(a(c(
+            e(.Boolean TestResult_)
+            e(.Boolean TestResult_%202)
+        ) *) local142)
+        e(dv(a(c(
+            e(.Boolean TestResult_)
+            e(.Boolean TestResult_%202)
+        ) *) ())dataItem_Array2)
+        e(a(c(
+            e(.Boolean TestResult_)
+            e(.Boolean TestResult_%202)
+        ) *) local148)
+        e(.Boolean local149)
+        e(.Boolean local150)
+        e(dv(a(c(
+            e(.Int32 Element%201)
+            e(.Int32 Element%202)
+        ) *) ())dataItem_Array)
+        e(a(c(
+            e(.Int32 Element%201)
+            e(.Int32 Element%202)
+        ) *) local156)
+        e(.Boolean local157)
+        e(dv(.Boolean true)local158)
+        e(dv(.Boolean true)local159)
+    )
+        clump(1
+        Copy(dataItem_Array4 local38)
+        Copy(dataItem_Array3 local44)
+        Copy(dataItem_Array8 local50)
+        Copy(dataItem_Array5 local70)
+        ArrayLength(local70 local71 )
+        IsGE(c0 local71 local157)
+        BranchIfTrue(1 local157)
+        Branch(2)
+        Perch(2)
+        Copy(c10 local72)
+        Copy(local71 local73)
+        Copy(c11 local114)
+        Copy(c14 local117)
+        Copy(c17 local120)
+        Perch(3)
+        ArrayIndex(local70 local83 local72 )
+        Copy(local83 local93)
+        Copy(local93.Element%201 local96)
+        Copy(local93.Element%202 local99)
+        Copy(local93.Element%203 local102)
+        InRangeAndCoerce(local102 local99 local96 local159 local158 local108 local105)
+        Increment(local108 local111 )
+        ArrayConcatenate(local114 local114 local111 )
+        ArrayConcatenate(local117 local117 local105 )
+        ArrayConcatenate(local120 local120 local102 )
+        Add(local72 c20 local72)
+        BranchIfGE(4 local72 local73)
+        Branch(3)
+        Perch(4)
+        Copy(local114 local123)
+        Copy(local117 local126)
+        Copy(local120 local129)
+        Branch(0)
+        Perch(1)
+        Copy(g7 local123)
+        Copy(g4 local126)
+        Copy(g1 local129)
+        Branch(0)
+        Perch(0)
+        IsEQ(local129 local50 local130)
+        Copy(local130 dataItem_TestResult_XY)
+        Copy(local129 dataItem_Array7)
+        IsEQ(local126 local44 local138)
+        Copy(local138 dataItem_TestResult_XY2)
+        Convert(local126 local142)
+        Copy(local142 dataItem_Array2)
+        IsEQ(local123 local38 local149)
+        Copy(local149 dataItem_TestResult_XY3)
+        Copy(local123 dataItem_Array)
+/* Clump Ended. */    )
+)))
+enqueue (%3AWeb%20Server%3AInteractive%3AApp%3ATestVI_Compare_Aggregates_InRange%2Egviweb)
+//Finished!! :D
